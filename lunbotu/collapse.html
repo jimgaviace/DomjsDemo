@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLAPSE</title>
+    <style>
+        .collapsible {
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: center;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            border: 1px solid #ddd;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="collapsible" onclick="toggleCollapse('bronze')">
+        <div class="content" id="bronzeContent">
+            <p>可以</p>
+        </div>
+    </button>
+    <button class="collapsible" onclick="toggleCollapse('silver')">
+        <div class="content" id="silverContent">
+            <p>很好</p>
+        </div>
+    </button>
+    <button class="collapsible" onclick="toggleCollapse('gold')">
+        <div class="content" id="goldContent">
+            <p>真棒</p>
+        </div>
+    </button>
+    <script>
+        function toggleCollapse(id) {
+            let content = document.getElementById(id + 'Content')
+            if(content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
