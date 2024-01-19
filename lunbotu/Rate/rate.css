@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+
+}
+
+.rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+
+}
+.star {
+    display: inline-block;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-image: url('https://666.798yishu.top/2024/01/anuH1b0KgGiyszx1a4ZAzXdp49N_compressed.jpg'); 
+    background-size: cover;
+}
+
+.star:hover,
+.star.active {
+    /* background-image: url('https://666.798yishu.top/2024/01/anuH1b0KgGiyszx1a4ZAzXdp49N_compressed.jpg'); Replace with your filled star image */
+    opacity: 0.5;
+}
